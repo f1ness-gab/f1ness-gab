@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Activities Showcase</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.light-theme {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.dark-theme {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --code-bg: #1e1e1e;
+      --output-bg: #2a2a2a;
+      --border-color: #444;
+    }
+
+    body.blue-theme {
+      --bg-color: #e6f0ff;
+      --text-color: #003366;
+      --code-bg: #d9eaff;
+      --output-bg: #ffffff;
+      --border-color: #99ccff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .theme-switcher {
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .code-box {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      white-space: pre-wrap;
+      font-family: Consolas, monospace;
+    }
+
+    .output-box {
+      background-color: var(--output-bg);
+      border: 1px dashed var(--border-color);
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="light-theme">
+
+  <div class="theme-switcher">
+    <label for="theme">Choose Theme:</label>
+    <select id="theme" onchange="document.body.className = this.value">
+      <option value="light-theme">Light</option>
+      <option value="dark-theme">Dark</option>
+      <option value="blue-theme">Blue</option>
+    </select>
+  </div>
+
+  <h1>My HTML Activities</h1>
+
+  <!-- Activity 4 -->
+  <div class="section">
+    <h2>Activity 4: Centering Text</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Activity 4 5&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Please Read.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;center&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Mwa Mwa CHUP CHUP&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/center&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p>Please Read.</p>
+      <center><p>Mwa Mwa CHUP CHUP</p></center>
+    </div>
+  </div>
+
+  <!-- Activity 5 -->
+  <div class="section">
+    <h2>Activity 5: Horizontal Rule Example</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Activity 7&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;HELLO&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;hr&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;HI&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p>HELLO</p>
+      <hr>
+      <p>HI</p>
+    </div>
+  </div>
+
+  <!-- Activity 6 -->
+  <div class="section">
+    <h2>Activity 6: Special Characters</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Activity 6&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ito na nga yung sabi niya, &quot;Hoy&nbsp;Ang&nbsp;Sarap&nbsp;Mo.&quot;&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p>Ito na nga yung sabi niya, "Hoy Ang Sarap Mo."</p>
+    </div>
+  </div>
+
+  <!-- Activity 7 -->
+  <div class="section">
+    <h2>Activity 7: Text Alignment</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Activity 7&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align=&quot;left&quot;&gt;Hi&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align=&quot;center&quot;&gt;Ang POGI&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align=&quot;right&quot;&gt;ni CHUN hehe!&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p align="left">Hi</p>
+      <p align="center">Ang POGI</p>
+      <p align="right">ni CHUN hehe!</p>
+    </div>
+  </div>
+
+  <!-- Activity 8 -->
+  <div class="section">
+    <h2>Activity 8: Text Styling</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Activity 8&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ano ang meaning ng &lt;i&gt;glamorous&lt;/i&gt; ba?&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Is it &lt;u&gt;True&lt;/u&gt; or &lt;u&gt;False&lt;/u&gt;&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Steven &lt;b&gt;JC&lt;/b&gt; Chun.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;You are now &lt;strike&gt;DEAD&lt;/strike&gt;&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Bakit ba ang &lt;sup&gt;pogi&lt;/sup&gt; ko?&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Bakit ba ang &lt;sub&gt;pogi&lt;/sub&gt; ko pa rin?&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ang &lt;big&gt;pogi&lt;/big&gt; ko &lt;big&gt;sobra&lt;/big&gt;&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Ang &lt;small&gt;cute&lt;/small&gt; mo naman hehe&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p>Ano ang meaning ng <i>glamorous</i> ba?</p>
+      <p>Is it <u>True</u> or <u>False</u></p>
+      <p>Steven <b>JC</b> Chun.</p>
+      <p>You are now <strike>DEAD</strike></p>
+      <p>Bakit ba ang <sup>pogi</sup> ko?</p>
+      <p>Bakit ba ang <sub>pogi</sub> ko pa rin?</p>
+      <p>Ang <big>pogi</big> ko <big>sobra</big></p>
+      <p>Ang <small>cute</small> mo naman hehe</p>
+    </div>
+  </div>
+
+  <!-- Activity 9 -->
+  <div class="section">
+    <h2>Activity 9: Links Example</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Activity 9&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;There's a criminal&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Click this for infos!&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;https://www.facebook.com/stvn.jc7&quot;&gt;Profile&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Someone is watching you&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;You wanna know?&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href=&quot;https://www.google.com/search?sca_esv=17212dbc4d09d461&rlz=1C1CHBF_enPH1066PH1066&sxsrf=ADLYWIIq4zsSyM50y1uzhyt8wiwvKNXR5Q:1737365708267&q=jumpscare+photo&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J7pRxUp2pI1mXV9fBsfh39LpAWJ-Nb3mi2m4EiVUszBizjj7k1tDSauugkDAVOm1ab7mHft6vFbPn2oZc2v3qXB0m8iRqrDW66UZJzxIomTCF_h2nCEF0EMww0jmP7uFoCojNUtePYSyJ9mFAyZJNubuMHtTTpYqYjitP1iPyqtqAEF94A&sa=X&sqi=2&ved=2ahUKEwiEiYvP_4OLAxWAh1YBHeEjFnYQtKgLegQIEBAB&biw=1600&bih=773&dpr=1#vhid=mK3UqI2rkONQTM&vssid=mosaic&quot;&gt;It's HIM&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p>There's a criminal</p>
+      <p>Click this for infos! <a href="https://www.facebook.com/stvn.jc7">Profile</a></p>
+      <p>Someone is watching you</p>
+      <p>You wanna know? <a href="https://www.google.com/search?sca_esv=17212dbc4d09d461&rlz=1C1CHBF_enPH1066PH1066&sxsrf=ADLYWIIq4zsSyM50y1uzhyt8wiwvKNXR5Q:1737365708267&q=jumpscare+photo&udm=2&fbs=AEQNm0Aa4sjWe7Rqy32pFwRj0UkWd8nbOJfsBGGB5IQQO6L3J7pRxUp2pI1mXV9fBsfh39LpAWJ-Nb3mi2m4EiVUszBizjj7k1tDSauugkDAVOm1ab7mHft6vFbPn2oZc2v3qXB0m8iRqrDW66UZJzxIomTCF_h2nCEF0EMww0jmP7uFoCojNUtePYSyJ9mFAyZJNubuMHtTTpYqYjitP1iPyqtqAEF94A&sa=X&sqi=2&ved=2ahUKEwiEiYvP_4OLAxWAh1YBHeEjFnYQtKgLegQIEBAB&biw=1600&bih=773&dpr=1#vhid=mK3UqI2rkONQTM&vssid=mosaic">It's HIM</a></p>
+    </div>
+  </div>
+
+</body>
+</html>

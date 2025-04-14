@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Activities Showcase</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.light-theme {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.dark-theme {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --code-bg: #1e1e1e;
+      --output-bg: #2a2a2a;
+      --border-color: #444;
+    }
+
+    body.blue-theme {
+      --bg-color: #e6f0ff;
+      --text-color: #003366;
+      --code-bg: #d9eaff;
+      --output-bg: #ffffff;
+      --border-color: #99ccff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .theme-switcher {
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .code-box {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      white-space: pre-wrap;
+      font-family: Consolas, monospace;
+    }
+
+    .output-box {
+      background-color: var(--output-bg);
+      border: 1px dashed var(--border-color);
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="light-theme">
+
+  <div class="theme-switcher">
+    <label for="theme">Choose Theme:</label>
+    <select id="theme" onchange="document.body.className = this.value">
+      <option value="light-theme">Light</option>
+      <option value="dark-theme">Dark</option>
+      <option value="blue-theme">Blue</option>
+    </select>
+  </div>
+
+  <h1>My HTML Activities</h1>
+
+  <!-- Activity 2: Paragraph Example -->
+  <div class="section">
+    <h2>Activity 2: Paragraph Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Paragraph Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;My name is louis Gabriel Turgano.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;My Mother is a Single Mom.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;I have one Brother&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p>My name is louis Gabriel Turgano.</p>
+      <p>My Mother is a Single Mom.</p>
+      <p>I have one Brother</p>
+    </div>
+  </div>
+
+  <!-- Activity 3: Line Break Example -->
+  <div class="section">
+    <h2>Activity 3: Line Break Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Line Break Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Hello&lt;br&gt;I Finished my homework already&lt;br&gt; Thank you!&lt;br /&gt; Mr. Jerie&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p>Hello<br>I Finished my homework already<br> Thank you!<br /> Mr. Jerie</p>
+    </div>
+  </div>
+
+  <!-- Activity 4: Centering Content Example -->
+  <div class="section">
+    <h2>Activity 4: Centering Content Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Centering Content Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This position is Left.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;center&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;This position is Center.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/center&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p>This position is Left.</p>
+      <center><p>This position is Center.</p></center>
+    </div>
+  </div>
+
+  <!-- Activity 5: Nonbreaking Spaces Example -->
+  <div class="section">
+    <h2>Activity 5: Nonbreaking Spaces Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Nonbreaking Spaces Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;An example of this technique appears in the movie "24&nbsp;Happy&nbsp;Women."&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p>An example of this technique appears in the movie "24 Happy Women."</p>
+    </div>
+  </div>
+
+  <!-- Activity 6: Align Attribute Example -->
+  <div class="section">
+    <h2>Activity 6: Align Attribute Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Align Attribute Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align = "left"&gt;This is Left Lane.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align = "center"&gt;This is Mid Lane.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p align = "right"&gt;This is Right Lane.&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p align="left">This is Left Lane.</p>
+      <p align="center">This is Mid Lane.</p>
+      <p align="right">This is Right Lane.</p>
+    </div>
+  </div>
+
+  <!-- Activity 7: Text Format Example -->
+  <div class="section">
+    <h2>Activity 7: Text Format Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Text Format Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses an &lt;i&gt;italicized&lt;/i&gt; font.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses an &lt;u&gt;underlined&lt;/u&gt; style.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses an &lt;b&gt;bold&lt;/b&gt; boldface.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses a &lt;strike&gt;strikethrough&lt;/strike&gt; case.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses a &lt;sup&gt;superscript&lt;/sup&gt; case.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses a &lt;sub&gt;subscript&lt;/sub&gt; style.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses a &lt;big&gt;big&lt;/big&gt; font.&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;The following word uses a &lt;small&gt;small&lt;/small&gt; font.&lt;/p&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p>The following word uses an <i>italicized</i> font.</p>
+      <p>The following word uses an <u>underlined</u> style.</p>
+      <p>The following word uses an <b>bold</b> boldface.</p>
+      <p>The following word uses a <strike>strikethrough</strike> case.</p>
+      <p>The following word uses a <sup>superscript</sup> case.</p>
+      <p>The following word uses a <sub>subscript</sub> style.</p>
+      <p>The following word uses a <big>big</big> font.</p>
+      <p>The following word uses a <small>small</small> font.</p>
+    </div>
+  </div>
+
+  <!-- Activity 8: Hyperlink Example -->
+  <div class="section">
+    <h2>Activity 8: Hyperlink Example</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Hyperlink Example&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; A Link Opening An Website Account&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;Click following link&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = "https://www.facebook.com/rielaldea/"&gt;FBcebook&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt; A Link Opening a Webpage&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = "https://www.instagram.com/_gabrielaldea/?fbclid="&gt;Instagram&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <p> A Link Opening An Website Account</p>
+      <p>Click following link</p>
+      <a href="https://www.facebook.com/rielaldea/">FBcebook</a>
+      <p> A Link Opening a Webpage</p>
+      <a href="https://www.instagram.com/_gabrielaldea/?fbclid=">Instagram</a>
+    </div>
+  </div>
+
+</body>
+</html>

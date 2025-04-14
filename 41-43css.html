@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Activities 41–43</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .activity {
+      margin-bottom: 60px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .output {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CSS Activity 41 -->
+  <div class="activity">
+    <h2>CSS Activity 41</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+img {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0.10;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filter: alpha(opacity=60); /* For IE8 and earlier */<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1&gt;Image Transparency&lt;/h1&gt;<br>
+&lt;p&gt;The opacity property specifies the transparency of an element. The lower the value, the more transparent:&lt;/p&gt;<br><br>
+&lt;p&gt;Image with 100% opacity:&lt;/p&gt;<br>
+&lt;img src="/imgs/bron.jpg" alt="Lebrawn" width="400" height="400"&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act41-img {
+          opacity: 0.10;
+          filter: alpha(opacity=60);
+        }
+      </style>
+      <h1>Image Transparency</h1>
+      <p>The opacity property specifies the transparency of an element. The lower the value, the more transparent:</p>
+      <p>Image with 100% opacity:</p>
+      <img class="act41-img" src="/imgs/bron.jpg" alt="Lebrawn" width="400" height="400">
+    </div>
+  </div>
+
+  <!-- CSS Activity 42 -->
+  <div class="activity">
+    <h2>CSS Activity 42</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+img {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;opacity: 0.5;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filter: alpha(opacity=50); /* For IE8 and earlier */<br>
+}<br>
+img:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;opacity: 1.0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;filter: alpha(opacity=100); /* For IE8 and earlier */<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Image Transparency&lt;/h1&gt;<br>
+&lt;p&gt;The opacity property is often used together with the :hover selector to change the opacity on mouse-over:&lt;/p&gt;<br>
+&lt;img src="/imgs/bron.jpg" alt="moonforest logo" width="200" height="150"&gt;<br>
+&lt;img src="/imgs/bron.jpg" alt="moonforest logo" width="200" height="150"&gt;<br>
+&lt;img src="/imgs/bron.jpg" alt="moonforest logo" width="200" height="150"&gt;<br>
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; In IE, a !DOCTYPE must be added for the :hover selector to work on other elements than the a element.&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act42-img {
+          opacity: 0.5;
+          filter: alpha(opacity=50);
+          transition: opacity 0.3s ease;
+        }
+        .act42-img:hover {
+          opacity: 1.0;
+          filter: alpha(opacity=100);
+        }
+      </style>
+      <h1>Image Transparency</h1>
+      <p>The opacity property is often used together with the :hover selector to change the opacity on mouse-over:</p>
+      <img class="act42-img" src="/imgs/bron.jpg" alt="moonforest logo" width="200" height="150">
+      <img class="act42-img" src="/imgs/bron.jpg" alt="moonforest logo" width="200" height="150">
+      <img class="act42-img" src="/imgs/bron.jpg" alt="moonforest logo" width="200" height="150">
+      <p><b>Note:</b> In IE, a !DOCTYPE must be added for the :hover selector to work on other elements than the a element.</p>
+    </div>
+  </div>
+
+  <!-- CSS Activity 43 -->
+  <div class="activity">
+    <h2>CSS Activity 43</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+ul {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 10;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 10;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width: 400px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f1f1f1;<br>
+}<br><br>
+li a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: #000;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 14px 18px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+}<br><br>
+li a:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #555;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: purple;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h2&gt;Vertical Navigation Bar&lt;/h2&gt;<br><br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#lakers"&gt;Lakers&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#los"&gt;Los&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#angeles"&gt;angeles&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#lebron"&gt;Lebron the GOAT&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act43-ul {
+          list-style-type: none;
+          margin: 10px;
+          padding: 10px;
+          width: 400px;
+          background-color: #f1f1f1;
+        }
+        .act43-ul li a {
+          display: block;
+          color: #000;
+          padding: 14px 18px;
+          text-decoration: none;
+        }
+        .act43-ul li a:hover {
+          background-color: #555;
+          color: purple;
+        }
+      </style>
+      <h2>Vertical Navigation Bar</h2>
+      <ul class="act43-ul">
+        <li><a href="#lakers">Lakers</a></li>
+        <li><a href="#los">Los</a></li>
+        <li><a href="#angeles">Angeles</a></li>
+        <li><a href="#lebron">Lebron the GOAT</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

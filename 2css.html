@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>CSS Activities Showcase</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    .section {
+      margin-bottom: 50px;
+    }
+    .code-box, .output-box {
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      padding: 10px;
+      font-family: Consolas, monospace;
+      white-space: pre-wrap;
+      margin-bottom: 10px;
+    }
+    .output-box {
+      background-color: #fdfdfd;
+      border: 1px dashed #ccc;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="section">
+    <h2>ACTCSS1: Internal CSS Styling</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+  #para1 { text-align: center; color: red; }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;p id="para1"&gt;Hello! This is Gab's Website&lt;/p&gt;<br>
+&lt;p&gt;This paragraph is not affected by the style.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <p style="text-align: center; color: red;">Hello! This is Gab's Website</p>
+      <p>This paragraph is not affected by the style.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>ACTCSS2: Center-Aligned Text with Class</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+  .center {<br>
+    text-align: center;<br>
+    color: black;<br>
+  }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1 class="center"&gt;black and center-aligned heading&lt;/h1&gt;<br>
+&lt;p class="center"&gt;black and center-aligned paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <h1 style="text-align: center; color: black;">black and center-aligned heading</h1>
+      <p style="text-align: center; color: black;">black and center-aligned paragraph.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>ACTCSS3: Paragraph with Class Selector</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+  p.center {<br>
+    text-align: center;<br>
+    color: green;<br>
+  }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1 class="center"&gt;This heading will not be affected&lt;/h1&gt;<br>
+&lt;p class="center"&gt;This paragraph will be green and center-aligned.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <h1>This heading will not be affected</h1>
+      <p style="text-align: center; color: green;">This paragraph will be green and center-aligned.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>ACTCSS4: Combining Classes for Styling</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+  p.center {<br>
+    text-align: center;<br>
+    color: green;<br>
+  }<br>
+  p.large {<br>
+    font-size: 250%;<br>
+  }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1 class="center"&gt;This heading will not be affected&lt;/h1&gt;<br>
+&lt;p class="center"&gt;This paragraph will be green and center-aligned.&lt;/p&gt;<br>
+&lt;p class="center large"&gt;This paragraph will be green, center-aligned, and in a medium font-size.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <h1>This heading will not be affected</h1>
+      <p style="text-align: center; color: green;">This paragraph will be green and center-aligned.</p>
+      <p style="text-align: center; color: green; font-size: 250%;">This paragraph will be green, center-aligned, and in a medium font-size.</p>
+    </div>
+  </div>
+
+  <div class="section">
+    <h2>ACT5: Hello World with Basic Styling</h2>
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+  h1, h2, p {<br>
+    text-align: center;<br>
+    color: green;<br>
+  }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+&lt;h2&gt;Smaller heading!&lt;/h2&gt;<br>
+&lt;p&gt;This is a paragraph.&lt;/p&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output-box">
+      <h1 style="text-align: center; color: green;">Hello World!</h1>
+      <h2 style="text-align: center; color: green;">Smaller heading!</h2>
+      <p style="text-align: center; color: green;">This is a paragraph.</p>
+    </div>
+  </div>
+
+</body>
+</html>

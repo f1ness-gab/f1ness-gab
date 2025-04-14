@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Activities Showcase</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.light-theme {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.dark-theme {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --code-bg: #1e1e1e;
+      --output-bg: #2a2a2a;
+      --border-color: #444;
+    }
+
+    body.blue-theme {
+      --bg-color: #e6f0ff;
+      --text-color: #003366;
+      --code-bg: #d9eaff;
+      --output-bg: #ffffff;
+      --border-color: #99ccff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .theme-switcher {
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .code-box {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      white-space: pre-wrap;
+      font-family: Consolas, monospace;
+    }
+
+    .output-box {
+      background-color: var(--output-bg);
+      border: 1px dashed var(--border-color);
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="light-theme">
+
+  <div class="theme-switcher">
+    <label for="theme">Choose Theme:</label>
+    <select id="theme" onchange="document.body.className = this.value">
+      <option value="light-theme">Light</option>
+      <option value="dark-theme">Dark</option>
+      <option value="blue-theme">Blue</option>
+    </select>
+  </div>
+
+  <h1>My HTML Activities</h1>
+
+  <!-- Activity 16-21 -->
+  <div class="section">
+    <h2>Activity 16-21: Links, Images, and Attributes</h2>
+    
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt; Activity 16 17 18 19 20 21<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;ACTIVITY 16 17 18 19 20 by CHUN&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;WANTED!&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src = &quot;https://scontent-hkg1-2.xx.fbcdn.net/v/t39.30808-6/470644387_1564452680851221_8738299518117678639_n.jpg?&quot; width = &quot;300&quot; height = &quot;300&quot; border = &quot;6&quot; align = &quot;right&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;p&gt;For more info, Click this!&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = &quot;https://www.facebook.com/stvn.jc7&quot; target = &quot;_blank&quot;&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&lt;img src = &quot;fb.com&quot; alt = &quot;Wanted Profile&quot; border = &quot;0&quot; /&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;/a&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;base href = &quot;www.arellano.edu.ph&quot;&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&nbsp;&nbsp;&lt;p&gt;For more Infos!&lt;/p&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = &quot;https://www.facebook.com/stvn.jc7&quot; target = &quot;_blank&quot;&gt;Opens in New Tab&lt;/a&gt; |<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = &quot;https://www.facebook.com/stvn.jc7&quot; target = &quot;_self&quot;&gt;Opens in Self Tab&lt;/a&gt; |<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = &quot;https://www.facebook.com/stvn.jc7&quot; target = &quot;_parent&quot;&gt;Opens in Parent Tab&lt;/a&gt; |<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;a href = &quot;https://www.facebook.com/stvn.jc7&quot; target = &quot;_top&quot;&gt;Opens in Body&lt;/a&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <div class="output-box">
+      <p>WANTED!</p>
+      <img src="imgs/hero.jpg" width="300" height="300" border="6" align="right">
+      <p>For more info, Click this!</p>
+      <a href="https://www.facebook.com/stvn.jc7" target="_blank">
+        <img src="imgs/hero.jpg" alt="Wanted Profile" border="0"/>
+      </a>
+      <br><br>
+      <p>For more Infos!</p>
+      <a href="https://www.facebook.com/stvn.jc7" target="_blank">Opens in New Tab</a> |
+      <a href="https://www.facebook.com/stvn.jc7" target="_self">Opens in Self Tab</a> |
+      <a href="https://www.facebook.com/stvn.jc7" target="_parent">Opens in Parent Tab</a> |
+      <a href="https://www.facebook.com/stvn.jc7" target="_top">Opens in Body</a>
+    </div>
+  </div>
+
+</body>
+</html>

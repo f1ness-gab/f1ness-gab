@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Activities 44–45</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .activity {
+      margin-bottom: 60px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .output {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CSS Activity 44 -->
+  <div class="activity">
+    <h2>CSS Activity 44</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+ul {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width: 300px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f1f1f1;<br>
+}<br><br>
+li a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: #000;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 16px 21px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+}<br>
+li a.active {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #4CAF50;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+}<br>
+li a:hover:not(.active) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #555;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h2&gt;Vertical Navigation Bar&lt;/h2&gt;<br><br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="active" href="#home"&gt;Los&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#news"&gt;Angeles&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contact"&gt;Lakers&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#about"&gt;NBA Champs&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act44-ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 300px;
+          background-color: #f1f1f1;
+        }
+        .act44-ul li a {
+          display: block;
+          color: #000;
+          padding: 16px 21px;
+          text-decoration: none;
+        }
+        .act44-ul li a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        .act44-ul li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+      </style>
+      <h2>Vertical Navigation Bar</h2>
+      <ul class="act44-ul">
+        <li><a class="active" href="#home">Los</a></li>
+        <li><a href="#news">Angeles</a></li>
+        <li><a href="#contact">Lakers</a></li>
+        <li><a href="#about">NBA Champs</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CSS Activity 45 -->
+  <div class="activity">
+    <h2>CSS Activity 45</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+ul {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;width: 300px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #f1f1f1;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;border: 1px solid #555;<br>
+}<br><br>
+li a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: #000;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 16px 21px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+}<br><br>
+li {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;border-bottom: 5px solid #555;<br>
+}<br>
+li:last-child {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;border-bottom: none;<br>
+}<br><br>
+li a.active {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #4CAF50;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+}<br>
+li a:hover:not(.active) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #555;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h2&gt;Vertical Navigation Bar&lt;/h2&gt;<br><br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="active" href="#home"&gt;Los&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#news"&gt;Angeles&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contact"&gt;Lakeshow&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#about"&gt;Bron the GOAT&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act45-ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          width: 300px;
+          background-color: #f1f1f1;
+          border: 1px solid #555;
+        }
+        .act45-ul li {
+          text-align: center;
+          border-bottom: 5px solid #555;
+        }
+        .act45-ul li:last-child {
+          border-bottom: none;
+        }
+        .act45-ul li a {
+          display: block;
+          color: #000;
+          padding: 16px 21px;
+          text-decoration: none;
+        }
+        .act45-ul li a.active {
+          background-color: #4CAF50;
+          color: white;
+        }
+        .act45-ul li a:hover:not(.active) {
+          background-color: #555;
+          color: white;
+        }
+      </style>
+      <h2>Vertical Navigation Bar</h2>
+      <ul class="act45-ul">
+        <li><a class="active" href="#home">Los</a></li>
+        <li><a href="#news">Angeles</a></li>
+        <li><a href="#contact">Lakeshow</a></li>
+        <li><a href="#about">Bron the GOAT</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

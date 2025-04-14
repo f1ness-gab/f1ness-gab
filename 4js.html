@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Activities 1-10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .activity {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+    }
+    .output {
+      background: #e8f0fe;
+      border-left: 4px solid #4285f4;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<!-- Activity 4 -->
+<div class="activity">
+    <h2>Activity 4: Click Button to Show Message</h2>
+    <div class="code">
+function showMessage() {\n  document.getElementById("output").innerHTML = "You clicked the button!";\n}
+    </div>
+    <div class="output">
+      <button onclick="document.getElementById('output4').innerText = 'You clicked the button!'">Click Me</button>
+      <p id="output4"></p>
+    </div>
+  </div>
+</body>
+</html>

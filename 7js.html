@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Activities 1-10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .activity {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+    }
+    .output {
+      background: #e8f0fe;
+      border-left: 4px solid #4285f4;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<!-- Activity 7 -->
+<div class="activity">
+    <h2>Activity 7: Validate Form</h2>
+    <div class="code">
+function validateForm() {\n  let name = document.getElementById("name").value;\n  if (name === "") {\n    document.getElementById("error").innerHTML = "Name is required.";\n    return false;\n  }\n  return true;\n}
+    </div>
+    <div class="output">
+      <input type="text" id="name" placeholder="Enter name">
+      <button onclick="if(document.getElementById('name').value===''){document.getElementById('error7').innerText='Name is required.';}else{document.getElementById('error7').innerText='Form submitted!';}">Submit</button>
+      <p id="error7" style="color:red;"></p>
+    </div>
+  </div>
+</body>
+</html>

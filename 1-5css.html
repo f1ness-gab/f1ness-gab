@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Activities 1-5</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .activity {
+      margin-bottom: 60px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .output {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="activity">
+    <h2>CSS Activity 1</h2>
+    <div class="code">
+&lt;style&gt;
+#para1 { text-align: center; color: red; }
+&lt;/style&gt;
+&lt;p id="para1"&gt;Hello! Welcome to my Website.&lt;/p&gt;
+&lt;p&gt;Ignore this. This is not affected.&lt;/p&gt;
+    </div>
+    <div class="output">
+      <style>
+        #act1para1 { text-align: center; color: red; }
+      </style>
+      <p id="act1para1">Hello! Welcome to my Website.</p>
+      <p>Ignore this. This is not affected.</p>
+    </div>
+  </div>
+
+  <div class="activity">
+    <h2>CSS Activity 2</h2>
+    <div class="code">
+&lt;style&gt;
+.center {
+    text-align: center;
+    color: blue;
+}
+&lt;/style&gt;
+&lt;h1 class="center"&gt;blue and center-aligned heading&lt;/h1&gt;
+&lt;p class="center"&gt;blue and center-aligned paragraph.&lt;/p&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act2center {
+          text-align: center;
+          color: blue;
+        }
+      </style>
+      <h1 class="act2center">blue and center-aligned heading</h1>
+      <p class="act2center">blue and center-aligned paragraph.</p>
+    </div>
+  </div>
+
+  <div class="activity">
+    <h2>CSS Activity 3</h2>
+    <div class="code">
+&lt;style&gt;
+p.center {
+    text-align: center;
+    color: blue;
+}
+&lt;/style&gt;
+&lt;h1 class="center"&gt;This heading will not be affected&lt;/h1&gt;
+&lt;p class="center"&gt;This paragraph will be blue and center-aligned.&lt;/p&gt;
+    </div>
+    <div class="output">
+      <style>
+        p.act3center {
+          text-align: center;
+          color: blue;
+        }
+      </style>
+      <h1>This heading will not be affected</h1>
+      <p class="act3center">This paragraph will be blue and center-aligned.</p>
+    </div>
+  </div>
+
+  <div class="activity">
+    <h2>CSS Activity 4</h2>
+    <div class="code">
+&lt;style&gt;
+p.center {
+    text-align: center;
+    color: blue;
+}
+p.large {
+    font-size: 300%;
+}
+&lt;/style&gt;
+&lt;h1 class="center"&gt;This heading will not be affected&lt;/h1&gt;
+&lt;p class="center"&gt;This paragraph will be blue and center-aligned.&lt;/p&gt;
+&lt;p class="center large"&gt;This paragraph will be blue, center-aligned, and in a LARGE font-size.&lt;/p&gt;
+    </div>
+    <div class="output">
+      <style>
+        p.act4center {
+          text-align: center;
+          color: blue;
+        }
+        p.act4large {
+          font-size: 300%;
+        }
+      </style>
+      <h1>This heading will not be affected</h1>
+      <p class="act4center">This paragraph will be blue and center-aligned.</p>
+      <p class="act4center act4large">This paragraph will be blue, center-aligned, and in a LARGE font-size.</p>
+    </div>
+  </div>
+
+  <div class="activity">
+    <h2>CSS Activity 5</h2>
+    <div class="code">
+&lt;style&gt;
+h1, h2, p {
+    text-align: center;
+    color: blue;
+}
+&lt;/style&gt;
+&lt;h1&gt;Hello World!&lt;/h1&gt;
+&lt;h2&gt;Smaller heading!&lt;/h2&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act5text {
+          text-align: center;
+          color: blue;
+        }
+      </style>
+      <h1 class="act5text">Hello World!</h1>
+      <h2 class="act5text">Smaller heading!</h2>
+      <p class="act5text">This is a paragraph.</p>
+    </div>
+  </div>
+
+</body>
+</html>

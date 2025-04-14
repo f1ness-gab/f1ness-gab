@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JavaScript Activities 1-10</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background: #f4f4f4;
+    }
+    .activity {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 8px;
+      overflow-x: auto;
+      margin-bottom: 20px;
+      white-space: pre-wrap;
+    }
+    .output {
+      background: #e8f0fe;
+      border-left: 4px solid #4285f4;
+      padding: 10px 15px;
+      border-radius: 4px;
+    }
+    button {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<!-- Activity 8 -->
+<div class="activity">
+    <h2>Activity 8: Loops</h2>
+    <div class="code">
+for (let i = 1; i <= 5; i++) {\n  document.write("Number " + i + "<br>");\n}
+    </div>
+    <div class="output">
+      <ul id="loop8"></ul>
+      <script>
+        const ul = document.getElementById("loop8");
+        for (let i = 1; i <= 5; i++) {
+          const li = document.createElement("li");
+          li.textContent = "Number " + i;
+          ul.appendChild(li);
+        }
+      </script>
+    </div>
+  </div>
+</body>
+</html>

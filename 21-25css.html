@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 21 to 25 - CSS Examples with Images</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .code, .output {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 15px;
+            font-family: Consolas, monospace;
+        }
+        .output {
+            background-color: #fdfdfd;
+        }
+        h2 {
+            color: #333;
+        }
+        .output img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ACT21: Background Image with Positioning and Margin -->
+    <div class="section">
+        <h2>ACT21: Background Image with Positioning and Margin</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            body {<br>
+            &nbsp;&nbsp;background: image url("IMG.gif") no-repeat right top;<br>
+            &nbsp;&nbsp;margin-right: 200px;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;Hello World!&lt;/h1&gt;<br>
+            &lt;p&gt;Now the background image is only shown once, and it is also positioned away from the text.&lt;/p&gt;<br>
+            &lt;p&gt;In this example we have also added a margin on the right side, so that the background image will not disturb the text.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h1>Hello World!</h1>
+            <p>Now the background image is only shown once, and it is also positioned away from the text.</p>
+            <p>In this example we have also added a margin on the right side, so that the background image will not disturb the text.</p>
+            <img src="IMG.gif" alt="Background Image Example">
+        </div>
+    </div>
+
+    <!-- ACT22: Full Page Background Image -->
+    <div class="section">
+        <h2>ACT22: Full Page Background Image</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            html {<br>
+            &nbsp;&nbsp;background: url(IMG.gif) no-repeat center fixed;<br>
+            &nbsp;&nbsp;background-size: cover;<br>
+            }<br>
+            body {<br>
+            &nbsp;&nbsp;color: green;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;Full Page Background Image&lt;/h1&gt;<br>
+            &lt;p&gt;ARELLANO UNIVERSITY&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h1>Full Page Background Image</h1>
+            <p>ARELLANO UNIVERSITY</p>
+            <img src="IMG.gif" alt="Full Page Background Image Example">
+        </div>
+    </div>
+
+    <!-- ACT23: The border-style Property -->
+    <div class="section">
+        <h2>ACT23: The border-style Property</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            p.dotted {border-style: dotted;}<br>
+            p.dashed {border-style: dashed;}<br>
+            p.solid {border-style: solid;}<br>
+            p.double {border-style: double;}<br>
+            p.groove {border-style: groove;}<br>
+            p.ridge {border-style: ridge;}<br>
+            p.inset {border-style: inset;}<br>
+            p.outset {border-style: outset;}<br>
+            p.none {border-style: none;}<br>
+            p.hidden {border-style: hidden;}<br>
+            p.mix {border-style: dotted dashed solid double;}<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h2&gt;The border-style Property&lt;/h2&gt;<br>
+            &lt;p&gt;This property specifies what kind of border to display:&lt;/p&gt;<br>
+            &lt;p class="dotted"&gt;A dotted border.&lt;/p&gt;<br>
+            &lt;p class="dashed"&gt;A dashed border.&lt;/p&gt;<br>
+            &lt;p class="solid"&gt;A solid border.&lt;/p&gt;<br>
+            &lt;p class="double"&gt;A double border.&lt;/p&gt;<br>
+            &lt;p class="groove"&gt;A groove border.&lt;/p&gt;<br>
+            &lt;p class="ridge"&gt;A ridge border.&lt;/p&gt;<br>
+            &lt;p class="inset"&gt;An inset border.&lt;/p&gt;<br>
+            &lt;p class="outset"&gt;An outset border.&lt;/p&gt;<br>
+            &lt;p class="none"&gt;No border.&lt;/p&gt;<br>
+            &lt;p class="hidden"&gt;A hidden border.&lt;/p&gt;<br>
+            &lt;p class="mix"&gt;A mixed border.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h2>The border-style Property</h2>
+            <p class="dotted">A dotted border.</p>
+            <p class="dashed">A dashed border.</p>
+            <p class="solid">A solid border.</p>
+            <p class="double">A double border.</p>
+            <p class="groove">A groove border.</p>
+            <p class="ridge">A ridge border.</p>
+            <p class="inset">An inset border.</p>
+            <p class="outset">An outset border.</p>
+            <p class="none">No border.</p>
+            <p class="hidden">A hidden border.</p>
+            <p class="mix">A mixed border.</p>
+        </div>
+    </div>
+
+    <!-- ACT24: Margin Property -->
+    <div class="section">
+        <h2>ACT24: Margin Property</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            div {<br>
+            &nbsp;&nbsp;margin: 80px;<br>
+            &nbsp;&nbsp;border: 3px solid #4CAF50;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;div&gt;This element has a margin of 80px.&lt;/div&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <div>This element has a margin of 80px.</div>
+        </div>
+    </div>
+
+    <!-- ACT25: Using Individual Margin Properties -->
+    <div class="section">
+        <h2>ACT25: Using Individual Margin Properties</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            div {<br>
+            &nbsp;&nbsp;border: 3px solid black;<br>
+            &nbsp;&nbsp;margin-top: 150px;<br>
+            &nbsp;&nbsp;margin-bottom: 150px;<br>
+            &nbsp;&nbsp;margin-right: 150px;<br>
+            &nbsp;&nbsp;margin-left: 100px;<br>
+            &nbsp;&nbsp;background-color: lightblue;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h2&gt;Using individual margin properties&lt;/h2&gt;<br>
+            &lt;div&gt;This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.&lt;/div&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h2>Using individual margin properties</h2>
+            <div>This div element has a top margin of 100px, a right margin of 150px, a bottom margin of 100px, and a left margin of 80px.</div>
+        </div>
+    </div>
+
+</body>
+</html>
+

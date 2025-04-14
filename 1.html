@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Activities Showcase</title>
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.light-theme {
+      --bg-color: #ffffff;
+      --text-color: #000000;
+      --code-bg: #f4f4f4;
+      --output-bg: #fdfdfd;
+      --border-color: #ccc;
+    }
+
+    body.dark-theme {
+      --bg-color: #121212;
+      --text-color: #ffffff;
+      --code-bg: #1e1e1e;
+      --output-bg: #2a2a2a;
+      --border-color: #444;
+    }
+
+    body.blue-theme {
+      --bg-color: #e6f0ff;
+      --text-color: #003366;
+      --code-bg: #d9eaff;
+      --output-bg: #ffffff;
+      --border-color: #99ccff;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .theme-switcher {
+      margin-bottom: 20px;
+    }
+
+    .section {
+      margin-bottom: 40px;
+    }
+
+    .code-box {
+      background-color: var(--code-bg);
+      border: 1px solid var(--border-color);
+      padding: 10px;
+      white-space: pre-wrap;
+      font-family: Consolas, monospace;
+    }
+
+    .output-box {
+      background-color: var(--output-bg);
+      border: 1px dashed var(--border-color);
+      padding: 10px;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body class="light-theme">
+
+  <div class="theme-switcher">
+    <label for="theme">Choose Theme:</label>
+    <select id="theme" onchange="document.body.className = this.value">
+      <option value="light-theme">Light</option>
+      <option value="dark-theme">Dark</option>
+      <option value="blue-theme">Blue</option>
+    </select>
+  </div>
+
+  <h1>My HTML Activities</h1>
+
+  <div class="section">
+    <h2>Activity 1: Resume</h2>
+
+    <!-- Code Display -->
+    <div class="code-box">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&nbsp;&nbsp;&lt;head&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Resume&lt;/title&gt;<br>
+&nbsp;&nbsp;&lt;/head&gt;&nbsp;&nbsp;RESUME<br>
+&nbsp;&nbsp;&lt;body&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h1&gt;Name: John Steven Carl S. Chun&lt;/h1&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h2&gt;Age: 19 Years Old&lt;/h2&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h3&gt;Birthday: March 14, 2005&lt;/h3&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h4&gt;Zodiac Sign: Pisces&lt;/h4&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h5&gt;Quote: Lalalalala&lt;/h5&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;h6&gt;Applying for: Engineering&lt;/h6&gt;<br>
+&nbsp;&nbsp;&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+
+    <!-- Actual Output -->
+    <div class="output-box">
+      <h1>Name: John Steven Carl S. Chun</h1>
+      <h2>Age: 19 Years Old</h2>
+      <h3>Birthday: March 14, 2005</h3>
+      <h4>Zodiac Sign: Pisces</h4>
+      <h5>Quote: Lalalalala</h5>
+      <h6>Applying for: Engineering</h6>
+    </div>
+  </div>
+
+</body>
+</html>

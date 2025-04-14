@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 36 to 40 - CSS Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .code, .output {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 15px;
+            font-family: Consolas, monospace;
+        }
+        .output {
+            background-color: #fdfdfd;
+        }
+        h2 {
+            color: #333;
+        }
+        .output img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ACT36: Letter Spacing -->
+    <div class="section">
+        <h2>ACT36: Letter Spacing</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            h1 {<br>
+            &nbsp;&nbsp;letter-spacing: 5px;<br>
+            }<br>
+            h2 {<br>
+            &nbsp;&nbsp;letter-spacing: -3px;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+            &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+        </div>
+    </div>
+
+    <!-- ACT37: Line Height -->
+    <div class="section">
+        <h2>ACT37: Line Height</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            p.small {<br>
+            &nbsp;&nbsp;line-height: 0.8;<br>
+            }<br>
+            p.big {<br>
+            &nbsp;&nbsp;line-height: 2.8;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;p&gt;<br>
+            This is a paragraph with a standard line-height.<br>
+            The default line height in most browsers is about 110% to 120%.<br>
+            &lt;/p&gt;<br>
+            &lt;p class="small"&gt;<br>
+            This is a paragraph with a smaller line-height.<br>
+            This is a paragraph with a smaller line-height.<br>
+            &lt;/p&gt;<br>
+            &lt;p class="big"&gt;<br>
+            This is a paragraph with a bigger line-height.<br>
+            This is a paragraph with a bigger line-height.<br>
+            &lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <p>This is a paragraph with a standard line-height.<br>
+            The default line height in most browsers is about 110% to 120%.</p>
+            <p class="small">This is a paragraph with a smaller line-height.<br>
+            This is a paragraph with a smaller line-height.</p>
+            <p class="big">This is a paragraph with a bigger line-height.<br>
+            This is a paragraph with a bigger line-height.</p>
+        </div>
+    </div>
+
+    <!-- ACT38: Right-to-Left Text Direction -->
+    <div class="section">
+        <h2>ACT38: Right-to-Left Text Direction</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            p.ex1 {<br>
+            &nbsp;&nbsp;direction: rtl;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;p&gt;This is the default text direction.&lt;/p&gt;<br>
+            &lt;p class="ex1"&gt;&lt;bdo dir="rtl"&gt;This is right-to-left text direction.&lt;/bdo&gt;&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <p>This is the default text direction.</p>
+            <p class="ex1"><bdo dir="rtl">This is right-to-left text direction.</bdo></p>
+        </div>
+    </div>
+
+    <!-- ACT39: Word Spacing -->
+    <div class="section">
+        <h2>ACT39: Word Spacing</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            h1 {<br>
+            &nbsp;&nbsp;word-spacing: 15px;<br>
+            }<br>
+            h2 {<br>
+            &nbsp;&nbsp;word-spacing: -2px;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;This is heading 1&lt;/h1&gt;<br>
+            &lt;h2&gt;This is heading 2&lt;/h2&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h1>This is heading 1</h1>
+            <h2>This is heading 2</h2>
+        </div>
+    </div>
+
+    <!-- ACT40: Text Shadow -->
+    <div class="section">
+        <h2>ACT40: Text Shadow</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            h1 {<br>
+            &nbsp;&nbsp;text-shadow: 6px 4px green;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h1&gt;Text-shadow effect&lt;/h1&gt;<br>
+            &lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Internet Explorer 9 and earlier do not support the text-shadow property.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h1>Text-shadow effect</h1>
+            <p><b>Note:</b> Internet Explorer 9 and earlier do not support the text-shadow property.</p>
+        </div>
+    </div>
+
+</body>
+</html>

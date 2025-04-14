@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Activities 38–40</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .activity {
+      margin-bottom: 60px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .output {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CSS Activity 38 -->
+  <div class="activity">
+    <h2>CSS Activity 38</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+p.ex1 { direction: rtl; }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;p&gt;This is the default text direction.&lt;/p&gt;<br>
+&lt;p class="ex1"&gt;&lt;bdo dir="rtl"&gt;RIGHT-TO-LEFT DIRECTION&lt;/bdo&gt;&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act38-rtl { direction: rtl; }
+      </style>
+      <p>This is the default text direction.</p>
+      <p class="act38-rtl"><bdo dir="rtl">RIGHT-TO-LEFT DIRECTION</bdo></p>
+    </div>
+  </div>
+
+  <!-- CSS Activity 39 -->
+  <div class="activity">
+    <h2>CSS Activity 39</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+h1 { word-spacing: 15px; }<br>
+h2 { word-spacing: -2px; }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Word-spacing 15px&lt;/h1&gt;<br>
+&lt;h2&gt;Word-spacing -2px&lt;/h2&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act39-h1 { word-spacing: 15px; }
+        .act39-h2 { word-spacing: -2px; }
+      </style>
+      <h1 class="act39-h1">Word-spacing 15px</h1>
+      <h2 class="act39-h2">Word-spacing -2px</h2>
+    </div>
+  </div>
+
+  <!-- CSS Activity 40 -->
+  <div class="activity">
+    <h2>CSS Activity 40</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+h1 { text-shadow: 6px 4px green; }<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br>
+&lt;h1&gt;Text-shadow effect&lt;/h1&gt;<br>
+&lt;p&gt;&lt;b&gt;Note:&lt;/b&gt; Jc Chun pogiiiiii&lt;/p&gt;<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act40-shadow { text-shadow: 6px 4px green; }
+      </style>
+      <h1 class="act40-shadow">Text-shadow effect</h1>
+      <p><b>Note:</b> Jc Chun pogiiiiii</p>
+    </div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Activities 46–47</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f5f5f5;
+    }
+    .activity {
+      margin-bottom: 60px;
+      background-color: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+    }
+    .code {
+      background-color: #272822;
+      color: #f8f8f2;
+      padding: 15px;
+      border-radius: 5px;
+      overflow-x: auto;
+      font-family: "Courier New", monospace;
+      white-space: pre-wrap;
+      margin-bottom: 20px;
+    }
+    .output {
+      padding: 20px;
+      background-color: #fff;
+      border: 1px solid #ddd;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- CSS Activity 46 -->
+  <div class="activity">
+    <h2>CSS Activity 46</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+ul {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;overflow: hidden;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333;<br>
+}<br><br>
+li {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float: left;<br>
+}<br><br>
+li a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 7px 8px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+}<br><br>
+li a:hover {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #111;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="active" href="#home"&gt;What's up?&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#news"&gt;Lebron's Achievements&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contact"&gt;Is Lebron the GOAT?&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#about"&gt;Proofs that Lebron is the GOAT&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act46-ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        .act46-ul li {
+          float: left;
+        }
+        .act46-ul li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 7px 8px;
+          text-decoration: none;
+        }
+        .act46-ul li a:hover {
+          background-color: #111;
+        }
+      </style>
+      <ul class="act46-ul">
+        <li><a class="active" href="#home">What's up?</a></li>
+        <li><a href="#news">Lebron's Achievements</a></li>
+        <li><a href="#contact">Is Lebron the GOAT?</a></li>
+        <li><a href="#about">Proofs that Lebron is the GOAT</a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- CSS Activity 47 -->
+  <div class="activity">
+    <h2>CSS Activity 47</h2>
+    <div class="code">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;head&gt;<br>
+&lt;style&gt;<br>
+ul {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;list-style-type: none;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;margin: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 0;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;overflow: hidden;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #333;<br>
+}<br><br>
+li {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;float: left;<br>
+}<br><br>
+li a {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;display: block;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;color: white;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-align: center;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;padding: 7px 8px;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;text-decoration: none;<br>
+}<br><br>
+li a:hover:not(.active) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #111;<br>
+}<br><br>
+.active {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;background-color: #4CAF50;<br>
+}<br>
+&lt;/style&gt;<br>
+&lt;/head&gt;<br>
+&lt;body&gt;<br><br>
+&lt;ul&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a class="active" href="#home"&gt;About Lebron&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#news"&gt;Height&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#contact"&gt;Weight&lt;/a&gt;&lt;/li&gt;<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&lt;li&gt;&lt;a href="#about"&gt;Vertical&lt;/a&gt;&lt;/li&gt;<br>
+&lt;/ul&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+    </div>
+    <div class="output">
+      <style>
+        .act47-ul {
+          list-style-type: none;
+          margin: 0;
+          padding: 0;
+          overflow: hidden;
+          background-color: #333;
+        }
+        .act47-ul li {
+          float: left;
+        }
+        .act47-ul li a {
+          display: block;
+          color: white;
+          text-align: center;
+          padding: 7px 8px;
+          text-decoration: none;
+        }
+        .act47-ul li a:hover:not(.active) {
+          background-color: #111;
+        }
+        .act47-ul li a.active {
+          background-color: #4CAF50;
+        }
+      </style>
+      <ul class="act47-ul">
+        <li><a class="active" href="#home">About Lebron</a></li>
+        <li><a href="#news">Height</a></li>
+        <li><a href="#contact">Weight</a></li>
+        <li><a href="#about">Vertical</a></li>
+      </ul>
+    </div>
+  </div>
+
+</body>
+</html>

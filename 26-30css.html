@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ACT 26 to 30 - CSS Examples</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .section {
+            margin-bottom: 40px;
+        }
+        .code, .output {
+            background-color: #f4f4f4;
+            border: 1px solid #ccc;
+            padding: 15px;
+            font-family: Consolas, monospace;
+        }
+        .output {
+            background-color: #fdfdfd;
+        }
+        h2 {
+            color: #333;
+        }
+        .output img {
+            max-width: 100%;
+            height: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- ACT26: Margin Shorthand Property - 4 Values -->
+    <div class="section">
+        <h2>ACT26: The margin shorthand property - 4 values</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            div {<br>
+            &nbsp;&nbsp;border: 3px solid black;<br>
+            &nbsp;&nbsp;margin: 30px 40px 80px 100px;<br>
+            &nbsp;&nbsp;background-color: lightblue;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h2&gt;The margin shorthand property - 4 values&lt;/h2&gt;<br>
+            &lt;div&gt;This div element has a top margin of 30px, a right margin of 40px, a bottom margin of 75px, and a left margin of 100px.&lt;/div&gt;<br>
+            &lt;hr&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h2>The margin shorthand property - 4 values</h2>
+            <div>This div element has a top margin of 30px, a right margin of 40px, a bottom margin of 80px, and a left margin of 100px.</div>
+        </div>
+    </div>
+
+    <!-- ACT27: Using Individual Padding Properties -->
+    <div class="section">
+        <h2>ACT27: Using individual padding properties</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            div {<br>
+            &nbsp;&nbsp;border: 4px solid black;<br>
+            &nbsp;&nbsp;background-color: lightblue;<br>
+            &nbsp;&nbsp;padding-top: 40px;<br>
+            &nbsp;&nbsp;padding-right: 40px;<br>
+            &nbsp;&nbsp;padding-bottom: 50px;<br>
+            &nbsp;&nbsp;padding-left: 100px;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h2&gt;Using individual padding properties&lt;/h2&gt;<br>
+            &lt;div&gt;This div element has a top padding of 40px, a right padding of 30px, a bottom padding of 50px, and a left padding of 100px.&lt;/div&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h2>Using individual padding properties</h2>
+            <div>This div element has a top padding of 40px, a right padding of 40px, a bottom padding of 50px, and a left padding of 100px.</div>
+        </div>
+    </div>
+
+    <!-- ACT28: Set the width of an element -->
+    <div class="section">
+        <h2>ACT28: Set the width of an element</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            div {<br>
+            &nbsp;&nbsp;width: 100%;<br>
+            &nbsp;&nbsp;border: 3px solid #4CAF50;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;div&gt;This element has a width of 100%.&lt;/div&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <div>This element has a width of 100%.</div>
+        </div>
+    </div>
+
+    <!-- ACT29: Set the height and width of an element -->
+    <div class="section">
+        <h2>ACT29: Set the height and width of an element</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            div {<br>
+            &nbsp;&nbsp;height: 100px;<br>
+            &nbsp;&nbsp;width: 80%;<br>
+            &nbsp;&nbsp;background-color: powderblue;<br>
+            }<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h2&gt;Set the height and width of an element&lt;/h2&gt;<br>
+            &lt;p&gt;This div element has a height of 100px and a width of 80%:&lt;/p&gt;<br>
+            &lt;div&gt;&lt;/div&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h2>Set the height and width of an element</h2>
+            <p>This div element has a height of 100px and a width of 80%:</p>
+            <div></div>
+        </div>
+    </div>
+
+    <!-- ACT30: The outline-style Property -->
+    <div class="section">
+        <h2>ACT30: The outline-style Property</h2>
+        <div class="code">
+            &lt;!DOCTYPE html&gt;<br>
+            &lt;html&gt;<br>
+            &lt;head&gt;<br>
+            &lt;style&gt;<br>
+            p {outline-color:red;}<br>
+            p.dotted {outline-style: dotted;}<br>
+            p.dashed {outline-style: dashed;}<br>
+            p.solid {outline-style: solid;}<br>
+            p.double {outline-style: double;}<br>
+            p.groove {outline-style: groove;}<br>
+            p.ridge {outline-style: ridge;}<br>
+            p.inset {outline-style: inset;}<br>
+            p.outset {outline-style: outset;}<br>
+            &lt;/style&gt;<br>
+            &lt;/head&gt;<br>
+            &lt;body&gt;<br>
+            &lt;h2&gt;The outline-style Property&lt;/h2&gt;<br>
+            &lt;p class="dotted"&gt;A dotted outline&lt;/p&gt;<br>
+            &lt;p class="dashed"&gt;A dashed outline&lt;/p&gt;<br>
+            &lt;p class="solid"&gt;A solid outline&lt;/p&gt;<br>
+            &lt;p class="double"&gt;A double outline&lt;/p&gt;<br>
+            &lt;p class="groove"&gt;A groove outline. The effect depends on the outline-color value.&lt;/p&gt;<br>
+            &lt;p class="ridge"&gt;A ridge outline. The effect depends on the outline-color value.&lt;/p&gt;<br>
+            &lt;p class="inset"&gt;An inset outline. The effect depends on the outline-color value.&lt;/p&gt;<br>
+            &lt;p class="outset"&gt;An outset outline. The effect depends on the outline-color value.&lt;/p&gt;<br>
+            &lt;/body&gt;<br>
+            &lt;/html&gt;
+        </div>
+        <div class="output">
+            <h2>The outline-style Property</h2>
+            <p class="dotted">A dotted outline</p>
+            <p class="dashed">A dashed outline</p>
+            <p class="solid">A solid outline</p>
+            <p class="double">A double outline</p>
+            <p class="groove">A groove outline. The effect depends on the outline-color value.</p>
+            <p class="ridge">A ridge outline. The effect depends on the outline-color value.</p>
+            <p class="inset">An inset outline. The effect depends on the outline-color value.</p>
+            <p class="outset">An outset outline. The effect depends on the outline-color value.</p>
+        </div>
+    </div>
+
+</body>
+</html>
